@@ -6,15 +6,37 @@
   position: relative;
 }
 
+.header-container {
+  color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50rem;
+  justify-content: space-between;
+  padding: 10rem 10rem 100rem 10rem;
+}
+
+.game-name{
+  font-weight: 700;
+  font-size: 48rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(209, 212, 8);
+}
+
+.game-instruction{
+  color:#e27d35;
+  font-style: italic;
+}
+
 .score-board {
   text-align: end;
   width: 200px;
-  position: relative;
-  left: calc(100% - 200px);
-  top: 0;
-  padding: 10px;
-  margin-bottom: 100px;
-  color: aliceblue;
+  /* position: relative; */
+  /* left: calc(100% - 200px); */
+  /* top: 0; */
+  /* padding: 10px; */
+  /* margin-bottom: 100px; */
+  /* color: aliceblue; */
 }
 
 .current-score {
