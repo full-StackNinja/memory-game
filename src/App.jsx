@@ -9,12 +9,14 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [cards, setCards] = useState([]);
-  const [totalClick, setTotalClick] = useState(0);
+  const [totalClicks, setTotalClicks] = useState(0);
+  const [cardClicks, setCardClicks] = useState({});
+  const [bestScore, setBestScore] = useState(0);
+
   const API_KEY = "CEmNnc4hkcJ7ocikD6uihaUTPMb8RPRE";
   const baseUrl = "https://api.giphy.com/v2/emoji?";
-  const limit = 10;
+  const limit = 20;
   const offset = 0;
-
   useEffect(() => {
     fetch(`${baseUrl}api_key=${API_KEY}&limit=${limit}&offset=${offset}`)
       .then((response) => {
