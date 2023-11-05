@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [cards, setCards] = useState([]);
+  const [totalClick, setTotalClick] = useState(0);
   const API_KEY = "CEmNnc4hkcJ7ocikD6uihaUTPMb8RPRE";
   const baseUrl = "https://api.giphy.com/v2/emoji?";
   const limit = 10;
@@ -23,6 +24,7 @@ function App() {
         }
       })
       .then((result) => {
+        console.log("result.data", result.data);
         setCards(result.data);
       });
   }, []);
