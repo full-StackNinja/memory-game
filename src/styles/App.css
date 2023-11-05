@@ -1,33 +1,52 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 10px;
   text-align: center;
+  position: relative;
+}
+
+.score-board {
+  text-align: end;
+  width: 200px;
+  position: relative;
+  left: calc(100% - 200px);
+  top: 0;
+  padding: 10px;
+  margin-bottom: 100px;
+  color: aliceblue;
+}
+
+.current-score {
+  margin-bottom: 10rem;
 }
 
 .cards-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 30px;
+  justify-content: center;
 }
 
 .card-container {
-  padding:0 0 2rem 0;
-  /* border: 1px solid red; */
-  width:min-content;
+  padding: 10rem;
+  padding-bottom: 30rem;
+  border-radius: 10rem;
+  width: min-content;
   cursor: pointer;
+  background-color: #78716c;
 }
 
-.card-container:hover{
-  background-color: rgb(48, 100, 100);
+.card-container:active {
+  background-color: rgb(95, 131, 185);
 }
 
-.card-image{
-  width: 300px;
+.card-image {
+  width: 200px;
 }
 
-.card-title{
+.card-title {
   color: aliceblue;
-  text-wrap:wrap;
+  text-wrap: wrap;
 }
