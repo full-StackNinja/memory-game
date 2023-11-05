@@ -28,7 +28,7 @@ function App() {
   }, []);
   return (
     <div className="cards-container">
-      <GameCards cards={cards} />
+      <GameCards cards={cards} setCards={setCards} />
     </div>
   );
 }
