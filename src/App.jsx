@@ -5,6 +5,7 @@ import "./styles/typography-4th.css";
 import "./styles/App.css";
 import GameCards from "./components/GameCards";
 import ScoreBoard from "./components/ScoreBoard";
+import Header from "./components/Header";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -39,7 +40,10 @@ function App() {
   }, []);
   return (
     <>
-      <ScoreBoard totalClicks={totalClicks} bestScore={bestScore} />
+      <div className="header-container">
+        <Header />
+        <ScoreBoard totalClicks={totalClicks} bestScore={bestScore} />
+      </div>
       <div className="cards-container">
         <GameCards
           cards={cards}
