@@ -1,0 +1,33 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.cards-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card-container {
+  padding:0 0 2rem 0;
+  /* border: 1px solid red; */
+  width:min-content;
+  cursor: pointer;
+}
+
+.card-container:hover{
+  background-color: rgb(48, 100, 100);
+}
+
+.card-image{
+  width: 300px;
+}
+
+.card-title{
+  color: aliceblue;
+  text-wrap:wrap;
+}
