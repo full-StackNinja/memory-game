@@ -9,14 +9,15 @@ function GameCards({ cards, setCards }) {
     });
     setCards(prevCards);
   };
-  return cards.map((card, index) => {
-    console.log("card", card.title);
+  return cards.map((card) => {
+    // console.log("card", card.title);
     const url = card.images["480w_still"].url;
     const title = card.title;
+    const id = card.id;
     return (
       <div
         className="card-container"
-        key={index}
+        key={id}
         onClick={() => {
           handleCardClick(card);
         }}
