@@ -4,6 +4,7 @@ import "./styles/normalize-3rd.css";
 import "./styles/typography-4th.css";
 import "./styles/App.css";
 import GameCards from "./components/GameCards";
+import ScoreBoard from "./components/ScoreBoard";
 import { useState, useEffect } from "react";
 
 function App() {
