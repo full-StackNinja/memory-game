@@ -27,14 +27,32 @@ function App() {
         }
       })
       .then((result) => {
-        console.log("result.data", result.data);
         setCards(result.data);
+        // get ids of the giphy images to store them into state hook
+        const cardIds = {};
+        result.data.forEach((card) => {
+          const id = card.id;
+          cardIds[id] = 0;
+        });
+        setCardClicks(cardIds);
       });
   }, []);
   return (
-    <div className="cards-container">
-      <GameCards cards={cards} setCards={setCards} />
-    </div>
+    <>
+      <ScoreBoard totalClicks={totalClicks} bestScore={bestScore} />
+      <div className="cards-container">
+        <GameCards
+          cards={cards}
+          setCards={setCards}
+          totalClicks={totalClicks}
+          setTotalClicks={setTotalClicks}
+          cardClicks={cardClicks}
+          setCardClicks={setCardClicks}
+          bestScore={bestScore}
+          setBestScore={setBestScore}
+        />
+      </div>
+    </>
   );
 }
 
