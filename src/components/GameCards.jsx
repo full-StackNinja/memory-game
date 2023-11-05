@@ -38,20 +38,18 @@ function GameCards({
     }
   };
   return cards.map((card) => {
-    // console.log("card", card.title);
     const url = card.images["480w_still"].url;
-    const title = card.title;
-    const id = card.id;
+
     return (
       <div
         className="card-container"
-        key={id}
+        key={card.id}
         onClick={() => {
           handleCardClick(card);
         }}
       >
-        <img className="card-image" src={url} alt={title} />
-        <p className="card-title">{title}</p>
+        <img className="card-image" src={url} alt={card.title} />
+        <p className="card-title">{card.title}</p>
       </div>
     );
   });
