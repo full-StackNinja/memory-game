@@ -1,5 +1,15 @@
 import PropTypes from "prop-types";
-function GameCards({ cards, setCards }) {
+
+function GameCards({
+  cards,
+  setCards,
+  totalClicks,
+  setTotalClicks,
+  cardClicks,
+  setCardClicks,
+  bestScore,
+  setBestScore,
+}) {
   const handleCardClick = (card) => {
     const prevCards = [...cards];
     prevCards.map((card, index) => {
