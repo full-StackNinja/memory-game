@@ -1,8 +1,6 @@
-# React + Vite
+# Memory Game
+- This project is a part of theodinproject.com (TOP)  REACT course.
+- The main purpose of this mini project is to practice the React hooks useState & especially useEffect hook for dealing asynch API calls.
+- In this game user need to click on the card only once otherwise he/she will lose the game.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## [LIVE PREVIEW](https://visionary-souffle-ce055c.netlify.app/)
